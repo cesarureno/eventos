@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "488112181347",
+    "firebase_url": "https://events-349eb.firebaseio.com",
+    "project_id": "events-349eb",
+    "storage_bucket": "events-349eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488112181347:android:7e100dab7b9c4683",
+        "android_client_info": {
+          "package_name": "com.cceo.events"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488112181347-pcsf1hm5aif81j5lhdeah6nuj5joji59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrarrEk3gj3AIoiF004ojP5zlk9tVtLfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

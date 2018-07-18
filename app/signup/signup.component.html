@@ -1,0 +1,35 @@
+<FlexboxLayout class="page">
+    <StackLayout class="form">
+        <Image class="logo" src="~/images/logo.png"></Image>
+        <Label class="header" text="Sign up"></Label>
+
+        <Label [text]="error"></Label>
+
+        <GridLayout rows="auto, auto, auto">
+            <StackLayout row="0" class="input-field">
+                <TextField class="input" hint="Email" [(ngModel)]="email" [isEnabled]="!processing"  keyboardType="email" autocorrect="false" autocapitalizationType="none" returnKeyType="next"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout row="1" class="input-field">
+                <TextField class="input" [(ngModel)]="password" [isEnabled]="!processing"  hint="Password" secure="true" returnKeyType="next"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <StackLayout row="2" class="input-field">
+                <TextField class="input" [(ngModel)]="passwordConfirmation" [isEnabled]="!processing"  hint="Confirm password" secure="true" returnKeyType="done" (returnPress)="signUp()"></TextField>
+                <StackLayout class="hr-light"></StackLayout>
+            </StackLayout>
+
+            <ActivityIndicator rowSpan="3" [busy]="processing"></ActivityIndicator>
+        </GridLayout>
+
+        <Button text="Sign Up" [isEnabled]="!processing" (tap)="signUp()" class="btn btn-primary m-t-20"></Button>
+    </StackLayout>
+
+    <Label class="login-label sign-up-label" (tap)="goToLogin()">
+        <FormattedString>
+            <Span text="Back to Login"></Span>
+        </FormattedString>
+    </Label>
+</FlexboxLayout>

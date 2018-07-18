@@ -1,0 +1,26 @@
+<FlexboxLayout class="page">
+    <StackLayout class="form">
+        <Image class="logo" src="~/images/logo.png"></Image>
+        <Label class="header" text="Iniciar Sesión"></Label>
+
+        <CardView class="cardStyle" margin="5" elevation="20" radius="15" >
+            <StackLayout class="card-content">
+                <FloatLabel placeholder="Correo o telefono" class="input-field" icon="https://cdn1.iconfinder.com/data/icons/hawcons/32/699049-icon-6-mail-envelope-closed-512.png"></FloatLabel>
+                <FloatLabel placeholder="Contraseña" secure="true" class="input-field" icon="https://cdn1.iconfinder.com/data/icons/hawcons/32/698959-icon-114-lock-512.png"></FloatLabel>
+            </StackLayout>
+
+        </CardView>
+    </StackLayout>
+
+    <StackLayout class="buttons">
+        <Button text="Entrar" [isEnabled]="!processing" (tap)="login()" class="btn btn-primary m-t-20"></Button>
+        <Label text="Olvide mi contraseña" class="login-label" (tap)="forgotPassword()"></Label>
+    </StackLayout>
+
+    <Label class="login-label sign-up-label" (tap)="goToSignUp()">
+        <FormattedString>
+            <Span text="¿No tienes una cuenta?"></Span>
+            <Span text=" Resgistrate" class="bold"></Span>
+        </FormattedString>
+    </Label>
+</FlexboxLayout>

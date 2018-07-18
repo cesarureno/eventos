@@ -1,0 +1,77 @@
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+<StackLayout>
+    <RadSideDrawer>
+        <StackLayout tkDrawerContent>
+            <StackLayout class="sidedrawer sidedrawer-left">
+                <StackLayout class="sidedrawer-header">
+                    <Label class="sidedrawer-header-text var" text="User Name"></Label>
+                    <Label class="sidedrawer-header-footnote var" text="username@mail.com"></Label>
+                </StackLayout>
+            </StackLayout>
+            <ScrollView row="1">
+                <StackLayout class="sidedrawer-content">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                                title="Home" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf015;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Eventos" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item-active"
+                                title="Settings" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf013;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Eventos generales" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                                title="Search" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf002;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Mis eventos a asistir" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                                title="Search" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf002;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Mis eventos" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                                title="Camera" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf030;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Mi cuenta" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                                title="Store" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf07a;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Mi perfil" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                                title="Store" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf07a;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="Cerrar sesión" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout tkMainContent>
+            <page-router-outlet></page-router-outlet>
+        </StackLayout>
+    </RadSideDrawer>
+</StackLayout>
+
+
+
